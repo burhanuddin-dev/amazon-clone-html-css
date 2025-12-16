@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img
+          src="Assets/Images/amazon-logo-white.png"
+          alt="Amazon Logo"
+          class="amazon-logo"
+        />
+        <img
+          src="Assets/Images/amazon-mobile-logo-white.png"
+          alt="Amazon Logo"
+          class="amazon-mobile-logo"
+        />
+      </div>
+
+      <div class="header-middle">
+        <input type="text" class="search-bar" placeholder="Search Amazon" />
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="header-right">
+        <i class="fa-solid fa-bars hamburger-menu"></i>
+
+        <a href="#" class="return-order-option">
+          <span class="return-text">Returns</span>
+          <span class="order-text">& Orders</span>
+        </a>
+
+        <a href="#" class="cart-option">
+          <img
+            src="Assets/Images/cart-icon.png"
+            alt="Cart Icon"
+            class="cart-icon"
+          />
+          <span class="cart-text">Cart</span>
+          <span class="cart-count">3</span>
+        </a>
+      </div>
+
+      <nav class="mobile-nav">
+        <a href="#">Returns & Orders</a>
+        <a href="#">Cart (<span class="cart-mobile-count">3</span>)</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/athletic-cotton-socks-6-pairs.jpg"
+            alt="Socks Image"
+          />
+        </div>
+
+        <p class="product-name">
+          Black and Gray Athletic Cotton Socks - 6 Pairs
+        </p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">87</span>
+        </div>
+
+        <p class="product-price">$10.90</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/intermediate-composite-basketball.jpg"
+            alt="Basketball Image"
+          />
+        </div>
+
+        <p class="product-name">Intermediate Size Basketball</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-4.png"
+            alt="Rating: 4.0 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">127</span>
+        </div>
+
+        <p class="product-price">$20.95</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+            alt="T-shirt Image"
+          />
+        </div>
+
+        <p class="product-name">Adults Plain Cotton T-Shirt - 2 Pack</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">56</span>
+        </div>
+
+        <p class="product-price">$7.99</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/black-2-slot-toaster.jpg"
+            alt="Toaster Image"
+          />
+        </div>
+
+        <p class="product-name">2 Slot Toaster - Black</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-5.png"
+            alt="Rating: 5.0 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">2197</span>
+        </div>
+
+        <p class="product-price">$18.99</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/6-piece-white-dinner-plate-set.jpg"
+            alt="Plate set Image"
+          />
+        </div>
+
+        <p class="product-name">6 Piece White Dinner Plate Set</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-4.png"
+            alt="Rating: 5.0 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">37</span>
+        </div>
+
+        <p class="product-price">$20.67</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/6-piece-non-stick-baking-set.webp"
+            alt="Baking Set Image"
+          />
+        </div>
+
+        <p class="product-name">
+          6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set
+        </p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">175</span>
+        </div>
+
+        <p class="product-price">$34.99</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/plain-hooded-fleece-sweatshirt-yellow.jpg"
+            alt="Hooded Sweatshirt Image"
+          />
+        </div>
+
+        <p class="product-name">Plain Hooded Fleece Sweatshirt</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">317</span>
+        </div>
+
+        <p class="product-price">$24.00</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/luxury-towel-set-6-piece.jpg"
+            alt="Luxury Towel Image"
+          />
+        </div>
+
+        <p class="product-name">Luxury Towel Set - Graphite Gray</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">144</span>
+        </div>
+
+        <p class="product-price">$35.99</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/liquid-laundry-detergent-plain.jpg"
+            alt="Liquid Degerent Image"
+          />
+        </div>
+
+        <p class="product-name">
+          Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz
+        </p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">305</span>
+        </div>
+
+        <p class="product-price">$35.99</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/knit-athletic-sneakers-gray.jpg"
+            alt="Sneakers Image"
+          />
+        </div>
+
+        <p class="product-name">Waterproof Knit Athletic Sneakers - Gray</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-4.png"
+            alt="Rating: 4.0 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">89</span>
+        </div>
+
+        <p class="product-price">$33.90</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/women-chiffon-beachwear-coverup-black.jpg"
+            alt="Women Clothes Image"
+          />
+        </div>
+
+        <p class="product-name">Women's Chiffon Beachwear Cover Up - Black</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">235</span>
+        </div>
+
+        <p class="product-price">$20.70</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/round-sunglasses-black.jpg"
+            alt="Sunglasses Image"
+          />
+        </div>
+
+        <p class="product-name">Round Sunglasses</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">30</span>
+        </div>
+
+        <p class="product-price">$15.60</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="Assets/Images/Products/women-beach-sandals.jpg"
+            alt="Women Sandels Image"
+          />
+        </div>
+
+        <p class="product-name">Round Sunglasses</p>
+
+        <div class="rating-container">
+          <img
+            src="Assets/Images/Ratings/rating-45.png"
+            alt="Rating: 4.5 stars"
+            class="rating-image"
+          />
+          <span class="rating-count">562</span>
+        </div>
+
+        <p class="product-price">$24.99</p>
+
+        <select name="quantity" id="quantity-select" class="quantity-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
