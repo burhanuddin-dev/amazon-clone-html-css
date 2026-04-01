@@ -8,3 +8,5 @@ hamburgerMenu.addEventListener("click", () => {
     mobileNav.style.display = "none";
   }
 });
+
+
